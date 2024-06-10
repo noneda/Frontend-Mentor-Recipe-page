@@ -1,0 +1,161 @@
+@font-face {
+    font-family: YoungSerif;
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format("truetype");
+    font-weight: 400, 600 , 700;
+}
+
+
+:root {
+    --ScreenDesktop : 1440px;
+    --ScreenMovile : 375px;
+    /*? Primary Colors  */
+    --Color0 : hsl(14, 45%, 36%);
+    --Color1 : hsl(332, 51%, 32%);
+    /** Neutral Colors */
+    --Color2 : hsl(0, 0%, 100%);
+    --Color3 : hsl(330, 100%, 98%);
+    --Color4 : hsl(30, 54%, 90%);
+    --Color5 : hsl(30, 18%, 87%);
+    --Color6 : hsl(30, 10%, 34%);
+    --Color7 : hsl(24, 5%, 18%);
+    /*! Fonts */
+    --Size : 16px;
+}
+
+body{
+    background-color: var(--Color4);
+    padding-top:5%;
+    font-family: Outfit;
+    font-size: 16px;
+}
+
+article{
+    background: var(--Color2);
+    max-width: 50%; 
+    border-radius: 12px;
+    padding: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure{margin: 0%;}img{border-radius: 12px;}
+
+h1, h2{
+    font-family: YoungSerif;
+}
+
+
+h1{
+    font-size: 33px;
+    font-stretch: semi-condensed;
+    color: var(--Color7);
+}
+
+h2{
+    color : var(--Color0)
+}
+
+p{
+    font-family: Outfit;
+    font-size: var(--Size);
+}
+
+hr{
+    margin-top: 33px;
+    border-style: solid;
+    border-color: var(--Color3);
+    border-width: 1px;
+}
+
+b{
+    color: var(--Color6);
+
+}
+
+li:not(:last-child) { 
+    margin-bottom: 15px;  
+}
+
+#PreparationTime{
+    margin-top: 12px;
+    background-color: hsla(332, 51%, 32%, 0.055);
+    border-radius: 12px;
+    padding: 12px 12px;
+}
+
+#PreparationTime h3{
+    color: var(--Color1);
+    margin-left: 20px;
+}
+
+#PreparationTime ul{
+    display: table;
+    width: 100%;
+    list-style-position: inside;
+}
+
+#PreparationTime ul li{
+    margin-left: -11px;
+    position: relative; 
+    padding-left: 1em;
+}
+
+#PreparationTime ul li::marker{
+    font-size: 12px;
+    color: var(--Color1);
+}
+
+#Ingredients ul li::marker{
+    font-size: 12px;
+    color: var(--Color0);
+}
+
+#Ingredients ul li {
+    list-style-type: square;
+    list-style-position: outside;
+    position: relative; 
+    padding-left: 1em;
+}
+
+#Instructions ol li{
+    list-style-position: outside;
+    position: relative; 
+    padding-left: 1em;
+}
+
+
+
+#Instructions ol li::marker {
+    color:var(--Color0);
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th{
+    padding: 15px;
+    text-align: left;
+}
+tr{
+    border-bottom: 1px solid var(--Color4);
+}
+
+tr:last-child{
+    border-bottom:none;
+}
+.Name{
+    color: var(--Color6);
+    font-style: normal;
+}
+.Value{
+    color: var(--Color0);
+}
